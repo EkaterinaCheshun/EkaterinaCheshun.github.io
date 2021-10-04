@@ -20,7 +20,21 @@
   <title>UX/UI Design</title>  
 
 <link href="./main.82cfd66e.css" rel="stylesheet"></head>
-
+<style>
+  .iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
 <body>
 
  <!-- Add your content of header -->
@@ -92,8 +106,11 @@
 
     
     <div class="section-container-spacer">
-        <p><iframe class="img-responsive" width="100%" hight="600" src="https://www.youtube.com/embed/M4IsYITicjY" title="YouTube video player" frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p><div class="iframe-container">
+          <iframe class="img-responsive" width="100%" hight="600" src="https://www.youtube.com/embed/M4IsYITicjY" title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+        </div>
         </p>
         
       <p><img  class="img-responsive" alt="" src="./general/roof.jpg"></p>
